@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plateforme de Santé Numérique</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0-alpha.2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Personnalisation des styles */
+    .gradient-bg {
+      background: linear-gradient(to bottom right, #ebf4fa, #c3d9f2);
+    }
+    .icon-size {
+      width: 3rem;
+      height: 3rem;
+      color: #5c6ac4;
+    }
+  </style>
+</head>
+<body class="gradient-bg">
+
+  <!-- Home Page -->
+  <div class="min-h-screen container mx-auto px-4 py-8">
+    <div class="flex items-center justify-center mb-12">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-size mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16h16V4H4z"/>
+      </svg>
+      <h1 class="text-4xl font-bold text-gray-900">Plateforme de Santé Numérique</h1>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Pour les Patients -->
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <h2 class="text-2xl font-semibold mb-4">Pour les Patients</h2>
+        <ul class="space-y-2">
+          <li>✓ Gestion de votre dossier médical</li>
+          <li>✓ Prise de rendez-vous en ligne</li>
+          <li>✓ Téléchargement de documents</li>
+          <li>✓ Paiement sécurisé</li>
+        </ul>
+      </div>
+
+      <!-- Pour les Professionnels -->
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <h2 class="text-2xl font-semibold mb-4">Pour les Professionnels</h2>
+        <ul class="space-y-2">
+          <li>✓ Gestion des patients</li>
+          <li>✓ Planning des consultations</li>
+          <li>✓ Accès aux dossiers médicaux</li>
+          <li>✓ Système de notification</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pages pour les Patients -->
+  <div id="patient" class="container mx-auto px-4 py-8">
+    <h2 class="text-3xl font-bold mb-4">Tableau de Bord Patient</h2>
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      <p>Page pour gérer le profil du patient, les rendez-vous, les documents, etc.</p>
+    </div>
+  </div>
+
+  <!-- Pages pour les Professionnels -->
+  <div id="professional" class="container mx-auto px-4 py-8">
+    <h2 class="text-3xl font-bold mb-4">Tableau de Bord Professionnel</h2>
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      <p>Page pour gérer les patients, les consultations, le planning, etc.</p>
+    </div>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plateforme de Santé Numérique</title>
+  
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ebf4fa, #c3d9f2);
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    /* Header Section */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .header svg {
+      width: 48px;
+      height: 48px;
+      color: #5c6ac4;
+      margin-right: 15px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    /* Grid Layout */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .card ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    /* Dashboard Section */
+    .dashboard {
+      padding: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .dashboard h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+
+    .dashboard p {
+      font-size: 1.2rem;
+      color: #34495e;
+      margin-top: 15px;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ecf0f1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div class="min-h-screen container mx-auto px-4 py-8">
+    <
